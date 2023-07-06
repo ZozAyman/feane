@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link BootStrap -->
+    <link rel="stylesheet" href="bootstarp/bootstrap.min.css">
+    <!-- Link Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- start section nav -->
+     <nav  class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Feane</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul style="padding-left: 0;" class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Fries</a></li>
+                <li><a class="dropdown-item" href="#">Pizza</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Burger</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input style="color: #026fff;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button style="display: none;" class="btn btn-outline-success" type="submit">Order Now</button>
+          </form>
+        </div>
+      </div>
+    </nav> 
+
+
+    <!-- start section landing -->
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/churros-g6b59ebc07_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="landing-title">Fast Food Restaurant</h5>
+            <p class="landing-par">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/pexels-valeria-boltneva-1639562.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="landing-title2">ORDER ONLINE</h5>
+            <p  class="landing-par">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/hero-bg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="landing-title3">Fast Food Restaurant</h5>
+            <p  class="landing-par">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- start section booking -->
+     <div class="container-fluid booking pb-5 wow fadeIn">
+      <div class="container">
+        <div style="padding: 35px;" class="bg-white shadow">
+          <div class="row g-2">
+            <div class="col-md-10">
+              <div class="row g-4">
+
+                <div class="col-md-3">
+                  <div class="date" id="date1" date-targer-input="nearest">
+                    <input style="color:#ff9800; font-weight: 800;" type="text" class="form-control datetimepicker-input" placeholder="Check Order" date-targer="#date1" date-toggle="datetimepicker">
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="date" id="date2" date-targer-input="nearest">
+                    <input style="color:#ff9800; font-weight: 800;" type="text" class="form-control datetimepicker-input" placeholder="Submit Order" date-targer="#date2" date-toggle="datetimepicker">
+                  </div>
+                </div>
+               
+                 <div class="col-md-3">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>Meals</option>
+                    <option value="1" >Burger</option>
+                    <option value="2">Fries</option>
+                    <option value="3">Fried Cheken</option>
+                  </select>
+                </div>
+
+                <div class="col-md-3">
+                  <select name="" id="" class="form-select">
+                    <option value="" selected>AdultS</option>
+                    <option value="1" >Adult 1</option>
+                    <option value="2">Adult 2</option>
+                    <option value="3">Adult 3</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-md-2">
+              <button href="#" type="button" style="margin-top: 12px;" class="btn btn-primary w-100">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- start section div2 -->
+     <div class="container pd-y">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="box">
+            <img src="images/o1.jpg" alt="" class="d-block image">
+          <div class="text">
+            <h2>Tasty Thursdays</h2>
+            <p>20% Off</p>
+            <button class="btn btn-primary ">Order Now</button>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="box">
+            <img src="images/o2.jpg" alt="" class="d-block image">
+          <div class="text">
+            <h2>Pizza Thursdays</h2>
+            <p>20% Off</p>
+            <button class="btn btn-primary ">Order Now</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- start section menu -->
+     <h2 class="title-menu"><span>O</span>ur Menu</h2> 
+
+      <!-- start section list -->
+     <ul class="list-group pd-y">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A meals family
+        <span class="badge bg-primary rounded-pill">14</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A pizza item
+        <span class="badge bg-primary rounded-pill">2</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        A burger item
+        <span class="badge bg-primary rounded-pill">1</span>
+      </li>
+    </ul> 
+
+    <!-- start section boxes menu -->
+    <div class="container pd-y">
+      <div class="row contentt">
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f3.png" alt="">
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$20</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f1.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$20</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f3.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$20</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f4.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$5</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f5.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$27</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f6.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$50</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f7.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$40</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f8.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$10</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f9.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$35</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f1.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$10</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img src="images/f2.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$17</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="cardd">
+            <img  src="images/f4.png" alt="" >
+            <div class="info">
+              <h2>Delicious Pizza</h2>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+              <div class="icons">
+                <span>$25</span>
+                <i></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="view" type="button">View More</button>
+    </div>
+
+    <!-- start section menu -->
+    <h2 class="title-menu"><span>B</span>ook Now</h2> 
+    <!-- start section book now -->
+    <div class="container pd-y">
+      <form class="row row2 g-3">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationDefault01" value="zeyad" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationDefault02" value="ayman" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">State</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>soos</option>
+            <option>extra soos</option>
+            <option>extra extra soos</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationDefault05" required>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Submit Order
+      </button>
+  <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Feane</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          WELCOME MY DEAR
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      </form>
+    </div>
+    
+    <!-- start section footer -->
+    <div class="footer">
+      <div class="roww">
+      <div class="coll coll1">
+        <a class="logoo" href="#">Feane</a>
+        <p class="par1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis, distinctio natus id cum reiciendis veniam voluptates quisquam culpa illum?</p>
+      </div>
+      <div class="coll">
+        <h3>Office <div class="underline1 underline"><span></span></div></h3>
+        <p class="par1">WhiteFiled, PIN 56056, Egypt</p>
+        <p class="email-id">zeyadelmarby@gamil.com</p>
+        <h4>+20 01157123451</h4>
+      </div>
+      <div class="coll">
+        <h3>Links <div class="underline2 underline"><span></span></div></h3>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="coll">
+        <h3>NewsLetter <div class="underline3 underline"><span></span></div></h3>
+        <form class="formm">
+          <i class="fa fa-envelope envelope"></i>
+          <input class="input" type="email" placeholder="Write A Email" required>
+          <button type="submit"><i class="fa fa-arrow-right right"></i></button>
+        </form>
+        <div class="social-icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="par-footer">Design By <span>ZA</span> - All Rights Reserved</p>
+    </div>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Link BootStrap JS -->
+    <script src="bootstarp/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
